@@ -6,7 +6,7 @@ using Content = Android.Content;
 
 namespace Xamarin.Broadcastreceiver.Sample
 {
-    [BroadcastReceiver(Enabled = true, Exported = false)]
+    [BroadcastReceiver(Enabled = true, Exported = true)]
     [IntentFilter(new[] { Content.Intent.ActionBootCompleted })]
     public class RebootReceiver : BroadcastReceiver
     {
